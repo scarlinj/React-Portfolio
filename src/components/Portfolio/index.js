@@ -60,6 +60,7 @@ const Portfolio = ({ category }) => {
       <div className="flex-row">
         {currentProjects.map((image, i) => (
           <img
+          // add path to photos of project below
             src={require(`../../assets/small/${category}/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
