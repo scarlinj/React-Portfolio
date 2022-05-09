@@ -1,27 +1,27 @@
 import React from 'react'
 import coverImage from "../../assets/cover/cover-image.jpg";
-import profileImage from "../../assets/large/portraits/Stephen-Profile.jpg"
 
-function About() {
+function Contact() {
 
   return (
     <section className="my-5" >
-      <h1 id="about">Who am I?</h1>
+      <h1 id="about">Contact Me</h1>
       <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
       <div className="my-2">
         <p>
-          Stephen is a coding student at Berkeley, California
+          Contact me at scarlinj@gmail.com
         </p>
-        <img src={profileImage} className="my-2" alt="stephenProfileImage">
-        </img>
+        <p>
+          My Github Profile: https://github.com/scarlinj
+        </p>
       </div>
     </section>
   )
 }
 
-export default About
+export default Contact
 
 // remove the below - just "function" causing errors
-// function 
+// function
 
 // export default About;

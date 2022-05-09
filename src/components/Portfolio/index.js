@@ -1,129 +1,64 @@
 import React, { useState } from 'react';
+import { capitalizeFirstLetter } from "../../utils/helpers";
+
+
 
 const Portfolio = ({ category }) => {
-  const [photos] = useState([
+  const [currentProject, setCurrentProject] = useState();
+
+  // show 6 projects for the user
+  const [projects] = useState([
     {
-      name: 'Grocery aisle',
+      name: 'Password Generator',
       category: 'commercial',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Generate secure password based on user criteria',
+        url: 'https://github.com/scarlinj/Challenge-3-Password-Generator.git'
     },
     {
-      name: 'Grocery booth',
+      name: 'ReadME Generator',
       category: 'commercial',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Generate a readME.md file with header links',
+        url: 'https://github.com/scarlinj/Challenge_9_Professional_README_Generator.git'
     },
     {
-      name: 'Building exterior',
+      name: 'Portfolio Generator',
       category: 'commercial',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Generate a profile for a user',
+        url: 'https://github.com/scarlinj/portfolio-generator.git'
     },
     {
-      name: 'Restaurant table',
+      name: 'Country Holiday Search',
       category: 'commercial',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Look up a country and get a list of holidays for that country',
+        url: 'https://github.com/scarlinj/Project-One.git'
     },
     {
-      name: 'Cafe interior',
+      name: 'Weather Dashboard',
       category: 'commercial',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Look up a ZIP code and get the weather report for that ZIP code',
+        url: 'https://github.com/scarlinj/weather-dashboard.git'
     },
     {
-      name: 'Cat green eyes',
-      category: 'portraits',
+      name: 'Recipe Blog',
+      category: 'commercial',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Post, find, and comment on recipes from other users',
+        url: 'https://github.com/scarlinj/weather-dashboard.git'
     },
-    {
-      name: 'Green parrot',
-      category: 'portraits',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Yellow macaw',
-      category: 'portraits',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Pug smile',
-      category: 'portraits',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Pancakes',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Burrito',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Scallop pasta',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Burger',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Fruit bowl',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Green river',
-      category: 'landscape',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Docks',
-      category: 'landscape',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Panoramic village by sea',
-      category: 'landscape',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Domestic landscape',
-      category: 'landscape',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Park bench',
-      category: 'landscape',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    }
   ]);
 
-  const currentPhotos = photos.filter(photo => photo.category === category);
+  // if filtering for projects, use the below filter:
+  const currentProjects = projects.filter(project => project.category === category);
 
   return (
     <div>
       <div className="flex-row">
-        {currentPhotos.map((image, i) => (
+        {currentProjects.map((image, i) => (
           <img
             src={require(`../../assets/small/${category}/${i}.jpg`).default}
             alt={image.name}
@@ -135,5 +70,6 @@ const Portfolio = ({ category }) => {
     </div>
   );
 };
+
 
 export default Portfolio;
