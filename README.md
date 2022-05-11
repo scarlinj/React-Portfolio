@@ -1,3 +1,6 @@
+#Stephen's React Portoflio
+This is a website launched entirely through React.  Click the links at the top to see pages about me, my portfolio and how to contact me.  This was all built in React!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
