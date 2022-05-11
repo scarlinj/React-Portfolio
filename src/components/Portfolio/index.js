@@ -53,7 +53,11 @@ const Portfolio = ({ category }) => {
   ]);
 
   // if filtering for projects, use the below filter:
-  const currentProjects = projects.filter(project => project.category === category);
+  // error: filter is not kicking everything
+  // whenever calling portfolio, passing category
+  // if category is undefined, will call empty array
+  console.log(category);
+  const currentProjects = projects.filter(project => project.category === "commercial");
 
   return (
     <div>

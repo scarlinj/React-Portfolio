@@ -11,9 +11,13 @@ function Resume() {
       {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
       <div className="my-2">
         
-        <p>
-        LinkedIn: https://www.linkedin.com/in/stephen-carlin-14838b21/
-        </p>
+        <a href="https://www.linkedin.com/in/stephen-carlin-14838b21/">
+        LinkedIn
+        </a>
+
+        <a href="https://github.com/scarlinj">Github
+        </a>
+
       </div>
     </section>
   )
