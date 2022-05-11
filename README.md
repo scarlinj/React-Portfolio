@@ -3,6 +3,12 @@
 This is a website launched entirely through React.  Click the links at the top to see pages about me, my portfolio and how to contact me.  This was all built in React!
 
 
+# About the Create React App
+
+AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
+
 ### Features
 
 GIVEN a single-page application portfolio for a web developer
@@ -104,9 +110,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# About the Create React App
-
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
 
