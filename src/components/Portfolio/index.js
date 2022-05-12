@@ -65,7 +65,7 @@ const Portfolio = ({ category }) => {
         {currentProjects.map((image, i) => (
           <img
           // add path to photos of project below
-            src={require(`../../assets/small/${category}/${i}.jpg`).default}
+            // src={require(`../../../assets/projectPreview/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             key={image.name}

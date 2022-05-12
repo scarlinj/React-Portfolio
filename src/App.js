@@ -13,7 +13,7 @@ function App() {
 
     {name: 'contact',
       description: 'Contact information'},
- 
+
     { name: 'portfolio', 
     description: 'Portfolio of projects' },
 
@@ -24,7 +24,7 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[1]);
 
- function findCategory(str) {
+function findCategory(str) {
   // receive string value and loop through categories
   const selectedCategory=categories.find(category => {
     return category.name===str;
