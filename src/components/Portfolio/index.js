@@ -62,6 +62,7 @@ const Portfolio = ({ category }) => {
   return (
     <div>
       <div className="flex-row">
+        {/* You will have to name the jpgs "1", "2", etc*/}
         {currentProjects.map((image, i) => (
           <img
           // add path to photos of project below
