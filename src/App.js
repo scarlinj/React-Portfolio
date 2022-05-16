@@ -5,8 +5,6 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-const app = express();
-const PORT = process.env.PORT || 3001;
 
 function App() {
   const [categories] = useState([
@@ -79,7 +77,3 @@ function findCategory(str) {
 }
 
 export default App;
-
-app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
-});

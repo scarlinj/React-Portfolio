@@ -16,7 +16,7 @@ function Nav(props) {
     // will not find it if the first letter capitalized
     // may not need findCategory - keep this to keep code cleaner
     findCategory(item.toLowerCase());
-    // no need to "return item;
+    // no need to "return" item;
   };
 
   return (
